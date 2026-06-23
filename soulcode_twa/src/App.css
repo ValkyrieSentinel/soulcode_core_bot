@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--tg-theme-bg-color, #1a1a1a);
+  color: var(--tg-theme-text-color, #ffffff);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+.twa-container {
+  padding: 20px;
+  text-align: center;
+}
+
+.twa-header h1 {
+  font-size: 24px;
+  color: var(--tg-theme-button-color, #2481cc);
+  margin-bottom: 5px;
+}
+
+.welcome-user {
+  font-size: 14px;
+  color: var(--tg-theme-hint-color, #aaaaaa);
+  margin-top: 0;
+}
+
+.tariff-card {
+  background: var(--tg-theme-secondary-bg-color, #242424);
+  border-radius: 16px;
+  padding: 24px;
+  margin-top: 30px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.price {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 15px 0;
+  color: #00ffa3;
+}
+
+.period {
+  font-size: 16px;
+  color: var(--tg-theme-hint-color, #aaaaaa);
+}
+
+.features {
+  text-align: left;
+  list-style: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+.features li {
+  margin: 10px 0;
+  font-size: 15px;
+}
+
+button {
+  width: 100%;
+  padding: 14px;
+  border-radius: 12px;
+  border: none;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.1s ease;
+}
+
+.btn-connect {
+  background-color: #f6851b; /* Колір Метамаску */
+  color: white;
+}
+
+.btn-pay {
+  background-color: var(--tg-theme-button-color, #2481cc);
+  color: var(--tg-theme-button-text-color, #ffffff);
+}
+
+button:active {
+  transform: scale(0.98);
+}

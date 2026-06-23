@@ -1,0 +1,25 @@
+version: '3.8'
+
+services:
+  arbitrum-nitro-node:
+    image: offchainlabs/nitro-node:v3.3.1-e326369
+    container_name: soulcode-arbitrum-node
+    restart: unless-stopped
+    ports:
+      - "8547:8547" 
+      - "8548:8548" 
+    volumes:
+      - ./nitro-data:/home/user/.arbitrum
+    command:
+      - --l1.url=https://eth-mainnet.g.alchemy.com/v2/demo 
+      - --node.chain-id=42161
+      - --node.rpc.addr=0.0.0.0
+      - --node.rpc.port=8547
+      - --node.rpc.enable-staged-tx-pool
+      - --node.type=execution
+      - --node.data-dir=/home/user/.arbitrum
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
