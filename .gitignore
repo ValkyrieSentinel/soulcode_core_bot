@@ -1,27 +1,24 @@
-/target
-Cargo.lock
+# Rust
+target/
+*.o
+*.exe
 
+# Zig
+.zig-cache/
+zig-out/
 
-**/node_modules/
-**/dist/
-**/.eslintcache
-**/.local
+# Node / React
+node_modules/
+public/
+build/
+dist/
 
-
-**/artifacts/
-**/cache/
-**/typechain/
-**/typechain-types/
-/out/
-
-
+# DB & Local
+*.db
+subs.db
 .env
 .env.local
-.env.*.local
-*.pem
-*.key
 
+# OS
 .DS_Store
 Thumbs.db
-**/.vscode/
-**/.idea/
